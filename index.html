@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Science Department</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">CSE Department</div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#faculty">Faculty</a>
+      <a href="#events">Events</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#contact">Contact</a>
+      <button id="darkToggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1 id="typing"></h1>
+    <p>Empowering students with knowledge, innovation, and excellence.</p>
+    <button onclick="scrollToSection('admissions')">Apply Now</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>The Computer Science Department offers world-class education and research opportunities.</p>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="section">
+    <h2>Our Programs</h2>
+    <div class="cards">
+      <div class="card">B.Sc Computer Science</div>
+      <div class="card">M.Sc Computer Science</div>
+      <div class="card">Ph.D in Computer Science</div>
+    </div>
+  </section>
+
+  <!-- Faculty Section -->
+  <section id="faculty" class="section">
+    <h2>Our Faculty</h2>
+    <div class="cards">
+      <div class="card">Dr. A. Kumar – AI & ML</div>
+      <div class="card">Prof. S. Meena – Networking</div>
+      <div class="card">Dr. R. Varun – Data Science</div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="section">
+    <h2>Upcoming Events</h2>
+    <div class="carousel">
+      <div class="slide active">Hackathon 2025</div>
+      <div class="slide">Workshop on AI</div>
+      <div class="slide">Seminar on Cybersecurity</div>
+    </div>
+  </section>
+
+  <!-- Admissions Section -->
+  <section id="admissions" class="section">
+    <h2>Admissions</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">Eligibility</button>
+        <div class="accordion-content">Pass in Higher Secondary with Math/CS</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">How to Apply?</button>
+        <div class="accordion-content">Apply online through our University portal.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Computer Science Department. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
